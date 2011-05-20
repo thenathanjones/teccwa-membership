@@ -3,3 +3,8 @@ C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\TECCWA Mem
 C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\TECCWA Membership\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\TECCWA Membership\obj\Debug\TECCWA Membership.dll
 C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\TECCWA Membership\obj\Debug\TECCWA Membership.pdb
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\bin\TECCWA Membership.dll
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\bin\TECCWA Membership.pdb
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\obj\Debug\TECCWA Membership.dll
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWA Membership\obj\Debug\TECCWA Membership.pdb
