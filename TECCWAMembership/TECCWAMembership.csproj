@@ -75,6 +75,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\section-background.png" />
     <Content Include="Content\Styles\Reset.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Styles\Site.css" />
@@ -100,9 +102,7 @@
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\Shared\Site.Master" />
   </ItemGroup>
