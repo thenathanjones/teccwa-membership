@@ -1,0 +1,5 @@
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWAMembership\bin\TECCWAMembership.dll
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWAMembership\bin\TECCWAMembership.pdb
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWAMembership\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWAMembership\obj\Debug\TECCWAMembership.dll
+C:\Users\Nathan Jones\Development\teccwa-membership\TECCWAMembership\obj\Debug\TECCWAMembership.pdb
