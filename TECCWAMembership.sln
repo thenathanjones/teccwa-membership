@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TECCWAMembership", "TECCWAMembership\TECCWAMembership.csproj", "{26C89F88-D8D9-4AAB-9D20-FF45A9952220}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specs", "Specs\Specs.csproj", "{63ACBC3B-B644-4998-873E-42ECDEE0C434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TECCWAMembership", "TECCWAMembership\TECCWAMembership.csproj", "{AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{26C89F88-D8D9-4AAB-9D20-FF45A9952220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26C89F88-D8D9-4AAB-9D20-FF45A9952220}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26C89F88-D8D9-4AAB-9D20-FF45A9952220}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26C89F88-D8D9-4AAB-9D20-FF45A9952220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63ACBC3B-B644-4998-873E-42ECDEE0C434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63ACBC3B-B644-4998-873E-42ECDEE0C434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63ACBC3B-B644-4998-873E-42ECDEE0C434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63ACBC3B-B644-4998-873E-42ECDEE0C434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

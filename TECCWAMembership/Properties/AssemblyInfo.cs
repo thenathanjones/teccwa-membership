@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TECCWA_Membership")]
+[assembly: AssemblyTitle("TECCWAMembership")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("TECCWA_Membership")]
+[assembly: AssemblyProduct("TECCWAMembership")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("55b62ba3-3d50-43ac-934b-e7dc2540c16f")]
+[assembly: Guid("c43cd3f8-da05-49d3-bed2-c3a4b8c712d9")]
 
 // Version information for an assembly consists of the following four values:
 //
