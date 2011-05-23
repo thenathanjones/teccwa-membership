@@ -7,7 +7,7 @@ using System.Web.Routing;
 
 namespace TECCWAMembership.Helpers
 {
-    public static class NewLabelExtensions
+    public static class HtmlExtensions
     {
         public static MvcHtmlString LabelFor<TModel, TValue>(this HtmlHelper<TModel> html, Expression<Func<TModel, TValue>> expression, object htmlAttributes)
         {

@@ -1,5 +1,6 @@
 <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TECCWAMembership.Models.MembershipForm>" %>
 <%@ Import Namespace="TECCWAMembership.Models" %>
+<%@ Import Namespace="TECCWAMembership.Helpers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     TECCWA Membership Form
@@ -68,7 +69,7 @@
                     <%= Html.ValidationMessageFor(model => model.EmailAddress)%>  
                 </div>
                 <div class="form-fields">
-                    <%= Html.LabelFor(model => model.DateOfBirth,) %>
+                    <%= Html.LabelFor(model => model.DateOfBirth) %>
                     <%= Html.TextBoxFor(model => model.DateOfBirth)%>
                     <%= Html.LabelFor(model => model.Occupation) %>
                     <%= Html.TextBoxFor(model => model.Occupation) %>                    
