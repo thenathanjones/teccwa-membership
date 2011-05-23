@@ -10,10 +10,10 @@
 
     <% using (Html.BeginForm("Send", "MembershipForm")) {%>
         <fieldset>
-            <div id="contact-details" class="details-section">
+            <div id="contact-details" class="details-section rounded-corners">
                 <h2>Contact Details</h2>
                 <div class="form-fields">
-                    <%= Html.LabelFor(model => model.Title, new { @class="A",title="Enter Name"}) %>
+                    <%= Html.LabelFor(model => model.Title) %>
                     <%= Html.TextBoxFor(model => model.Title) %>
                     <%= Html.LabelFor(model => model.FirstName) %>
                     <%= Html.TextBoxFor(model => model.FirstName) %>                    
@@ -42,8 +42,8 @@
                     <%= Html.TextBoxFor(model => model.Suburb)%>
                     <%= Html.LabelFor(model => model.State) %>
                     <%= Html.DropDownListFor(model => model.State, MembershipForm.StatesAsList())%>                    
-                    <%= Html.LabelFor(model => model.Postcode) %>
-                    <%= Html.TextBoxFor(model => model.Postcode)%>
+                    <%= Html.LabelFor(model => model.Postcode)%>
+                    <%= Html.TextBoxFor(model => model.Postcode, new { @class = "little-input" })%>
                 </div>
                 <div class="form-fields-errors">
                     <%= Html.ValidationMessageFor(model => model.Suburb) %>  
@@ -51,11 +51,11 @@
                 </div>
                 <div class="form-fields">
                     <p>Phone</p>
-                    <%= Html.LabelFor(model => model.HomeNumber)%>
+                    <%= Html.LabelFor(model => model.HomeNumber, new { @class = "little-label" })%>
                     <%= Html.TextBoxFor(model => model.HomeNumber)%>
-                    <%= Html.LabelFor(model => model.MobileNumber)%>
+                    <%= Html.LabelFor(model => model.MobileNumber, new { @class="little-label"})%>
                     <%= Html.TextBoxFor(model => model.MobileNumber)%>                 
-                    <%= Html.LabelFor(model => model.WorkNumber)%>
+                    <%= Html.LabelFor(model => model.WorkNumber, new { @class="little-label"})%>
                     <%= Html.TextBoxFor(model => model.WorkNumber)%>
                 </div>
                 <div class="form-fields-errors">
@@ -76,21 +76,19 @@
                 </div>
                 <div class="form-fields-errors">
                     <%= Html.ValidationMessageFor(model => model.DateOfBirth) %>  
-                    <%= Html.ValidationMessageFor(model => model.FirstName) %>  
-                    <%= Html.ValidationMessageFor(model => model.LastName) %>  
                 </div>   
                 <div class="clear"></div>             
             </div>
-            <div id="dietary-medical-alerts" class="details-section">
+            <div id="dietary-medical-alerts" class="details-section rounded-corners">
                 <h2>Dietary/Medical Alerts</h2>
             </div>            
-            <div id="emergency-contacts" class="details-section">
+            <div id="emergency-contacts" class="details-section rounded-corners">
                 <h2>Emergency Contacts</h2>
             </div>            
-            <div id="vehicle-details" class="details-section">
+            <div id="vehicle-details" class="details-section rounded-corners">
                 <h2>Vehicle Details</h2>
             </div>            
-            <div id="payment-details" class="details-section">
+            <div id="payment-details" class="details-section rounded-corners">
                 <h2>Payment Details</h2>
             </div>
 

@@ -68,9 +68,27 @@ body
     width: 100px;
 }
 
+.details-section .little-label
+{
+    width: 50px;
+}
+
+.details-section .little-input
+{
+    width: 50px;
+}
+
 .details-section input, .details-section select
 {
     float: left;
+}
+
+.rounded-corners 
+{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .clear 

@@ -13,7 +13,7 @@
     <div class="page">
 
         <div id="header">
-            <img alt="TECCWA Logo" src="../../Content/Images/logo.png" />
+            <img alt="TECCWA Logo" src='<%= Url.Content( "~/Content/Images/logo.png") %>' />
               
         </div>
 
