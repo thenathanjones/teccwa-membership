@@ -91,23 +91,50 @@ this.ScenarioSetup(scenarioInfo);
 #line 18
  testRunner.And("I press \"Send\"");
 #line 19
- testRunner.Then("I should see the error \"Title is required\"");
+ testRunner.Then("I should be on the home page");
 #line 20
- testRunner.And("I should see the error \"First Name is required\"");
+ testRunner.Then("I should see the error \"Title is required\"");
 #line 21
- testRunner.And("I should see the error \"Last Name is required\"");
+ testRunner.And("I should see the error \"First Name is required\"");
 #line 22
- testRunner.And("I should see the error \"Street Number is required\"");
+ testRunner.And("I should see the error \"Surname is required\"");
 #line 23
- testRunner.And("I should see the error \"Street Name is required\"");
+ testRunner.And("I should see the error \"Street Number is required\"");
 #line 24
- testRunner.And("I should see the error \"Postcode is required\"");
+ testRunner.And("I should see the error \"Street Name is required\"");
 #line 25
- testRunner.And("I should see the error \"Contact Phone Number is required\"");
+ testRunner.And("I should see the error \"Postcode is required\"");
 #line 26
- testRunner.And("I should see the error \"E-Mail Address is required\"");
+ testRunner.And("I should see the error \"Contact Phone Number is required\"");
 #line 27
+ testRunner.And("I should see the error \"E-Mail Address is required\"");
+#line 28
  testRunner.And("I should see the error \"D.O.B. is required\"");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("The user must enter a valid email address")]
+        public virtual void TheUserMustEnterAValidEmailAddress()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user must enter a valid email address", ((string[])(null)));
+#line 30
+this.ScenarioSetup(scenarioInfo);
+#line 31
+ testRunner.Given("I am on the home page");
+#line 32
+ testRunner.Then("I fill in \"E-Mail Address\" with \"wrongemail\"");
+#line 33
+ testRunner.And("I press \"Send\"");
+#line 34
+ testRunner.Then("I should see the error \"E-Mail Address is not valid\"");
+#line 35
+ testRunner.Then("I fill in \"E-Mail Address\" with \"valid@email.com\"");
+#line 36
+ testRunner.And("I press \"Send\"");
+#line 37
+ testRunner.Then("I should not see the error \"E-Mail Address is not valid\"");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

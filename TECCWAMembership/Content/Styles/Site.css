@@ -39,3 +39,41 @@ body
 {
     display: none;
 }
+
+.details-section 
+{
+    background-image: url("../../Content/Images/section-background.png");
+    margin: 20px;
+    padding: 10px;
+    clear: both;
+}
+
+.details-section .form-fields 
+{
+    clear: both;
+}
+
+.details-section h2 
+{
+    font-family: 'Special Elite';
+    font-size: 3em;
+    margin: 5px 0px;
+}
+
+.details-section label, .details-section p
+{
+    float: left;
+    text-align: right;
+    padding: 3px;
+    width: 100px;
+}
+
+.details-section input, .details-section select
+{
+    float: left;
+}
+
+.clear 
+{
+    clear: both;
+}

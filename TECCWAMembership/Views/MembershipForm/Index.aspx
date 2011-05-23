@@ -1,4 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TECCWAMembership.Models.MembershipForm>" %>
+<%@ Import Namespace="TECCWAMembership.Models" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     TECCWA Membership Form
@@ -8,10 +9,10 @@
 
     <% using (Html.BeginForm("Send", "MembershipForm")) {%>
         <fieldset>
-            <div id="ContactDetailsSection">
+            <div id="contact-details" class="details-section">
                 <h2>Contact Details</h2>
                 <div class="form-fields">
-                    <%= Html.LabelFor(model => model.Title) %>
+                    <%= Html.LabelFor(model => model.Title, new { @class="A",title="Enter Name"}) %>
                     <%= Html.TextBoxFor(model => model.Title) %>
                     <%= Html.LabelFor(model => model.FirstName) %>
                     <%= Html.TextBoxFor(model => model.FirstName) %>                    
@@ -39,7 +40,7 @@
                     <%= Html.LabelFor(model => model.Suburb) %>
                     <%= Html.TextBoxFor(model => model.Suburb)%>
                     <%= Html.LabelFor(model => model.State) %>
-                    <%= Html.DropDownListFor(model => model.State, new List<SelectListItem>()) %>                    
+                    <%= Html.DropDownListFor(model => model.State, MembershipForm.StatesAsList())%>                    
                     <%= Html.LabelFor(model => model.Postcode) %>
                     <%= Html.TextBoxFor(model => model.Postcode)%>
                 </div>
@@ -48,7 +49,7 @@
                     <%= Html.ValidationMessageFor(model => model.Postcode) %>  
                 </div>
                 <div class="form-fields">
-                    Phone
+                    <p>Phone</p>
                     <%= Html.LabelFor(model => model.HomeNumber)%>
                     <%= Html.TextBoxFor(model => model.HomeNumber)%>
                     <%= Html.LabelFor(model => model.MobileNumber)%>
@@ -59,18 +60,36 @@
                 <div class="form-fields-errors">
                     <%= Html.ValidationMessage("ContactNumber") %>  
                 </div>
-                
+                <div class="form-fields">
+                    <%= Html.LabelFor(model => model.EmailAddress) %>
+                    <%= Html.TextBoxFor(model => model.EmailAddress)%>                
+                </div>
+                <div class="form-fields-errors">
+                    <%= Html.ValidationMessageFor(model => model.EmailAddress)%>  
+                </div>
+                <div class="form-fields">
+                    <%= Html.LabelFor(model => model.DateOfBirth,) %>
+                    <%= Html.TextBoxFor(model => model.DateOfBirth)%>
+                    <%= Html.LabelFor(model => model.Occupation) %>
+                    <%= Html.TextBoxFor(model => model.Occupation) %>                    
+                </div>
+                <div class="form-fields-errors">
+                    <%= Html.ValidationMessageFor(model => model.DateOfBirth) %>  
+                    <%= Html.ValidationMessageFor(model => model.FirstName) %>  
+                    <%= Html.ValidationMessageFor(model => model.LastName) %>  
+                </div>   
+                <div class="clear"></div>             
             </div>
-            <div id="DietaryMedicalAlertsSection">
+            <div id="dietary-medical-alerts" class="details-section">
                 <h2>Dietary/Medical Alerts</h2>
             </div>            
-            <div id="EmergencyContactsSection">
+            <div id="emergency-contacts" class="details-section">
                 <h2>Emergency Contacts</h2>
             </div>            
-            <div id="VehicleDetailsSection">
+            <div id="vehicle-details" class="details-section">
                 <h2>Vehicle Details</h2>
             </div>            
-            <div id="PaymentDetailsSection">
+            <div id="payment-details" class="details-section">
                 <h2>Payment Details</h2>
             </div>
 

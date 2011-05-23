@@ -27,14 +27,20 @@ namespace Specs
             Assert.True(WebBrowser.Current.ContainsText(toSee));
         }
 
+        [Then(@"I should not see ""(.*)""")]
+        public void ThenIShouldNotSee(string toSee)
+        {
+            Assert.False(WebBrowser.Current.ContainsText(toSee));
+        }
+
         [Then(@"the title is ""(.*)""")]
         public void ThenTheTitleIs(string title)
         {
             Assert.AreEqual(title, WebBrowser.Current.Title);
         }
 
-        [Given(@"I fill in ""(.*)"" with ""(.*)""")]
-        public void GivenIFillInTitleWith(string labelName, string value)
+        [Then(@"I fill in ""(.*)"" with ""(.*)""")]
+        public void ThenIFillInTitleWith(string labelName, string value)
         {
             var label = WebBrowser.Current.Labels.Single(l => l.Text == labelName);
             var targetField = WebBrowser.Current.TextField(label.For);
@@ -42,6 +48,7 @@ namespace Specs
         }
 
         [Given(@"I press ""(.*)""")]
+        [Then(@"I press ""(.*)""")]
         public void GivenIPress(string buttonText)
         {
             WebBrowser.Current.Button(b => b.Text == buttonText).Click();
@@ -53,6 +60,10 @@ namespace Specs
             Assert.True(WebBrowser.Current.Elements.Any(e => e.ClassName == "field-validation-error" && e.Text == errorMessage));
         }
 
-
+        [Then(@"I should not see the error ""(.*)""")]
+        public void ThenIShouldNotSeeTheError(string errorMessage)
+        {
+            Assert.False(WebBrowser.Current.Elements.Any(e => e.ClassName == "field-validation-error" && e.Text == errorMessage));
+        }
     }
 }

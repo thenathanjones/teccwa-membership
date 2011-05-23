@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TECCWAMembership.Helpers;
 using TECCWAMembership.Models;
 
 namespace TECCWAMembership.Controllers
@@ -25,6 +26,11 @@ namespace TECCWAMembership.Controllers
             if (!formToSend.IsPhoneValid)
             {
                 ModelState.AddModelError("ContactNumber", "Contact Phone Number is required");
+            }
+
+            if (formToSend.EmailAddress != null && !ValidationHelper.IsValidEmail(formToSend.EmailAddress))
+            {
+                ModelState.AddModelError("EmailAddress", "E-Mail Address is not valid");
             }
 
             if (ModelState.IsValid)
