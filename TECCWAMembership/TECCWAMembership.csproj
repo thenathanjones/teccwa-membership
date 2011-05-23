@@ -69,6 +69,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HtmlExtensions.cs" />
     <Compile Include="Helpers\ValidationHelper.cs" />
     <Compile Include="Models\MembershipForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
