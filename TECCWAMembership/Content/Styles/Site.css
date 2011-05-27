@@ -11,6 +11,13 @@ body
     color: White;
 }
 
+#main 
+{
+    margin: auto;
+    width: 1000px;
+    padding: 20px;
+}
+
 h1, h2 
 {
     font-family: 'Special Elite';
@@ -76,22 +83,19 @@ h2
     clear: both;
 }
 
-.details-section .form-fields 
-{
-    clear: both;
-}
-
 .details-section label, .details-section p
 {
     float: left;
     text-align: right;
     padding: 3px;
     width: 100px;
+    clear: left;
 }
 
 .details-section .little-label
 {
     width: 50px;
+    clear: none;
 }
 
 .details-section .little-input

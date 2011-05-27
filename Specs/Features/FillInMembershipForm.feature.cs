@@ -179,10 +179,10 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("The user is edit details for multiple emergency contacts")]
-        public virtual void TheUserIsEditDetailsForMultipleEmergencyContacts()
+        [NUnit.Framework.DescriptionAttribute("The user can edit details for multiple emergency contacts")]
+        public virtual void TheUserCanEditDetailsForMultipleEmergencyContacts()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user is edit details for multiple emergency contacts", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user can edit details for multiple emergency contacts", ((string[])(null)));
 #line 50
 this.ScenarioSetup(scenarioInfo);
 #line 51
@@ -196,7 +196,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 55
  testRunner.And("I fill in \"Relationship\" for Emergency Contact 1 with \"Brother\"");
 #line 56
- testRunner.And("I add another Emegency Contact");
+ testRunner.And("I add another Emergency Contact");
 #line 57
  testRunner.Then("I should see 2 Emergency Contacts");
 #line 58
@@ -296,6 +296,49 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.Then("I should see 2 Vehicles");
 #line 95
  testRunner.Then("\"Model\" for Vehicle 1 contains \"\"");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("The user can edit details for multiple vehicles")]
+        public virtual void TheUserCanEditDetailsForMultipleVehicles()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user can edit details for multiple vehicles", ((string[])(null)));
+#line 97
+this.ScenarioSetup(scenarioInfo);
+#line 98
+ testRunner.Given("I am on the home page");
+#line 99
+ testRunner.Then("I should see 1 Vehicles");
+#line 100
+ testRunner.And("I fill in \"Model\" for Vehicle 1 with \"Supra\"");
+#line 101
+ testRunner.And("I fill in \"Year\" for Vehicle 1 with \"1993\"");
+#line 102
+ testRunner.And("I fill in \"Chassis Code\" for Vehicle 1 with \"JZA80\"");
+#line 103
+ testRunner.And("I fill in \"Colour\" for Vehicle 1 with \"Silver\"");
+#line 104
+ testRunner.And("I fill in \"Engine\" for Vehicle 1 with \"1UZFE\"");
+#line 105
+ testRunner.And("I fill in \"Use\" for Vehicle 1 with \"Daily\"");
+#line 106
+ testRunner.And("I add another Vehicle");
+#line 107
+ testRunner.Then("I should see 2 Vehicles");
+#line 108
+ testRunner.And("I fill in \"Model\" for Vehicle 2 with \"Celica XX\"");
+#line 109
+ testRunner.And("I fill in \"Year\" for Vehicle 2 with \"1981\"");
+#line 110
+ testRunner.And("I fill in \"Chassis Code\" for Vehicle 2 with \"GA61\"");
+#line 111
+ testRunner.And("I fill in \"Colour\" for Vehicle 2 with \"White\"");
+#line 112
+ testRunner.And("I fill in \"Engine\" for Vehicle 2 with \"1UZFE\"");
+#line 113
+ testRunner.And("I fill in \"Use\" for Vehicle 2 with \"Daily\"");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

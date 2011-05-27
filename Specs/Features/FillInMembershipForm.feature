@@ -47,13 +47,13 @@ Scenario: The user can add and remove emergency contacts
 	Then I should see 2 Emergency Contacts
 	Then "Name" for Emergency Contact 1 contains ""
 
-Scenario: The user is edit details for multiple emergency contacts
+Scenario: The user can edit details for multiple emergency contacts
 	Given I am on the home page
 	Then I should see 1 Emergency Contacts
 	And I fill in "Name" for Emergency Contact 1 with "Simon O'Hughson"
 	And I fill in "Contact Number" for Emergency Contact 1 with "0438992223"
 	And I fill in "Relationship" for Emergency Contact 1 with "Brother"
-	And I add another Emegency Contact
+	And I add another Emergency Contact
 	Then I should see 2 Emergency Contacts
 	And I fill in "Name" for Emergency Contact 2 with "Roger Bobson"
 	And I fill in "Contact Number" for Emergency Contact 2 with "082345322"
@@ -93,3 +93,21 @@ Scenario: The user can add and remove vehicle details
 	Then I remove Vehicle 1
 	Then I should see 2 Vehicles
 	Then "Model" for Vehicle 1 contains ""
+
+Scenario: The user can edit details for multiple vehicles
+	Given I am on the home page
+	Then I should see 1 Vehicles
+	And I fill in "Model" for Vehicle 1 with "Supra"
+	And I fill in "Year" for Vehicle 1 with "1993"
+	And I fill in "Chassis Code" for Vehicle 1 with "JZA80"
+	And I fill in "Colour" for Vehicle 1 with "Silver"
+	And I fill in "Engine" for Vehicle 1 with "1UZFE"
+	And I fill in "Use" for Vehicle 1 with "Daily"
+	And I add another Vehicle
+	Then I should see 2 Vehicles
+	And I fill in "Model" for Vehicle 2 with "Celica XX"
+	And I fill in "Year" for Vehicle 2 with "1981"
+	And I fill in "Chassis Code" for Vehicle 2 with "GA61"
+	And I fill in "Colour" for Vehicle 2 with "White"
+	And I fill in "Engine" for Vehicle 2 with "1UZFE"
+	And I fill in "Use" for Vehicle 2 with "Daily"
