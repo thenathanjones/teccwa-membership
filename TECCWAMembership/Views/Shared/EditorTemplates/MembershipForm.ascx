@@ -85,6 +85,10 @@
 </div>            
 <div id="vehicle-details" class="details-section rounded-corners">
     <h2>Vehicle Details</h2>
+        <div id="vehicle-details-container">
+        <%= Html.EditorFor(model => model.VehicleDetails) %>
+    </div>
+    <%= Html.LinkToAddNestedForm("Add Vehicle Details", "#vehicle-details-container", ".vehicle", "VehicleDetails", typeof(Vehicle), new { id = "add-vehicle" })%>
 </div>            
 <div id="payment-details" class="details-section rounded-corners">
     <h2>Payment Details</h2>

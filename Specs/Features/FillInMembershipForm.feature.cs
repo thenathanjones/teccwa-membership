@@ -161,11 +161,11 @@ this.ScenarioSetup(scenarioInfo);
 #line 41
  testRunner.Then("I fill in \"Name\" for Emergency Contact 1 with \"Simon O\'Hughson\"");
 #line 42
- testRunner.Then("I add another Emegency Contact");
+ testRunner.Then("I add another Emergency Contact");
 #line 43
  testRunner.Then("I should see 2 Emergency Contacts");
 #line 44
- testRunner.Then("I add another Emegency Contact");
+ testRunner.Then("I add another Emergency Contact");
 #line 45
  testRunner.Then("I should see 3 Emergency Contacts");
 #line 46
@@ -276,6 +276,26 @@ this.ScenarioSetup(scenarioInfo);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user can add and remove vehicle details", ((string[])(null)));
 #line 85
 this.ScenarioSetup(scenarioInfo);
+#line 86
+ testRunner.Given("I am on the home page");
+#line 87
+ testRunner.Then("I should see 1 Vehicles");
+#line 88
+ testRunner.Then("I fill in \"Model\" for Vehicle 1 with \"Subaru\"");
+#line 89
+ testRunner.Then("I add another Vehicle");
+#line 90
+ testRunner.Then("I should see 2 Vehicles");
+#line 91
+ testRunner.Then("I add another Vehicle");
+#line 92
+ testRunner.Then("I should see 3 Vehicles");
+#line 93
+ testRunner.Then("I remove Vehicle 1");
+#line 94
+ testRunner.Then("I should see 2 Vehicles");
+#line 95
+ testRunner.Then("\"Model\" for Vehicle 1 contains \"\"");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

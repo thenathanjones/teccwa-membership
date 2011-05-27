@@ -61,6 +61,8 @@ namespace TECCWAMembership.Models
 
         public IList<EmergencyContact> EmergencyContacts { get; set; }
 
+        public IList<Vehicle> VehicleDetails { get; set; }
+
         public bool IsPhoneValid { get { return HomeNumber != null || MobileNumber != null || WorkNumber != null; } }
 
         public string DietaryMedicalAlerts { get; set; }

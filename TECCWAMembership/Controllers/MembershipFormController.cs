@@ -17,6 +17,7 @@ namespace TECCWAMembership.Controllers
         {
             var form = new MembershipForm();
             form.EmergencyContacts = new List<EmergencyContact>() {new EmergencyContact()};
+            form.VehicleDetails = new List<Vehicle>() {new Vehicle()};
 
             return View(form);
         }

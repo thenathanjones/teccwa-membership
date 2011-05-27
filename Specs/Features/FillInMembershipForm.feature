@@ -39,9 +39,9 @@ Scenario: The user can add and remove emergency contacts
 	Given I am on the home page
 	Then I should see 1 Emergency Contacts
 	Then I fill in "Name" for Emergency Contact 1 with "Simon O'Hughson"
-	Then I add another Emegency Contact
+	Then I add another Emergency Contact
 	Then I should see 2 Emergency Contacts
-	Then I add another Emegency Contact
+	Then I add another Emergency Contact
 	Then I should see 3 Emergency Contacts
 	Then I remove Emergency Contact 1
 	Then I should see 2 Emergency Contacts
@@ -83,4 +83,13 @@ Scenario: The user must enter a valid email address
 	Then I should not see the error "E-Mail Address is not valid"
 
 Scenario: The user can add and remove vehicle details
-	 
+	Given I am on the home page
+	Then I should see 1 Vehicles
+	Then I fill in "Model" for Vehicle 1 with "Subaru"
+	Then I add another Vehicle
+	Then I should see 2 Vehicles
+	Then I add another Vehicle
+	Then I should see 3 Vehicles
+	Then I remove Vehicle 1
+	Then I should see 2 Vehicles
+	Then "Model" for Vehicle 1 contains ""

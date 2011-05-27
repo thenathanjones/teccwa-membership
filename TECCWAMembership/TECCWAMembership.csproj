@@ -87,6 +87,7 @@
     <Content Include="Views\Shared\EditorTemplates\EmergencyContact.ascx" />
     <Content Include="Views\MembershipForm\New.aspx" />
     <Content Include="Views\Shared\EditorTemplates\MembershipForm.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Vehicle.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

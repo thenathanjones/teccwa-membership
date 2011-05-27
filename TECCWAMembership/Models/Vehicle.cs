@@ -7,5 +7,6 @@ namespace TECCWAMembership.Models
 {
     public class Vehicle
     {
+        public string Model { get; set; }
     }
 }

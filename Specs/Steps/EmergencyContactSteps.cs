@@ -19,13 +19,13 @@ namespace Specs.Steps
         }
 
         [Then(@"I fill in ""(.*)"" for Emergency Contact (\d) with ""(.*)""")]
-        public void ThenIFillInFieldForEmergencyContact(string labelName, int contactNumber, string value)
+        public void ThenIFillInFieldForEmergencyContactXWithValue(string labelName, int contactNumber, string value)
         {
             var targetField = GetTargetField(labelName, contactNumber);
             targetField.Value = value;
         }
 
-        [Then(@"I add another Emegency Contact")]
+        [Then(@"I add another Emergency Contact")]
         public void ThenIAddAnotherEmegencyContact()
         {
             WebBrowser.Current.Links.First(l => l.Id == "add-emergency-contact").Click();
@@ -51,7 +51,7 @@ namespace Specs.Steps
         {
             var container = WebBrowser.Current.Divs.Single(d => d.Id == "emergency-contacts");
             var label = container.Labels.Where(l => l.Text == labelName).ElementAt(contactNumber - 1);
-            var forField = contactNumber == 1 ? label.For.Replace("[0]", "_0_") : label.For;
+            var forField = label.For.Contains("[0]") ? label.For.Replace("[0]", "_0_") : label.For;
             return WebBrowser.Current.TextField(t => t.Id == forField);
         }
     }
