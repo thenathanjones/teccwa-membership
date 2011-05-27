@@ -11,7 +11,9 @@ namespace Specs.Helpers
             get
             {
                 if (!ScenarioContext.Current.ContainsKey("browser"))
+                {
                     ScenarioContext.Current["browser"] = new IE();
+                }
                 return (Browser)ScenarioContext.Current["browser"];
             }
         }
@@ -20,7 +22,7 @@ namespace Specs.Helpers
         public static void Close()
         {
             if (ScenarioContext.Current.ContainsKey("browser"))
-                WebBrowser.Current.Close();
+               Current.Close();
         }
     }
 }

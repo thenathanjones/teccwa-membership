@@ -12,12 +12,13 @@ namespace TECCWAMembership.Controllers
     {
         //
         // GET: /MembershipForm/
-
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult New()
         {
-            ViewData.Model = new MembershipForm();
+            var form = new MembershipForm();
+            form.EmergencyContacts = new List<EmergencyContact>() {new EmergencyContact()};
 
-            return View();
+            return View(form);
         }
 
         [HttpPost]
@@ -38,7 +39,7 @@ namespace TECCWAMembership.Controllers
                 return Redirect("/");
             }
 
-            return View("Index", formToSend);
+            return View("New", formToSend);
         }
     }
 }

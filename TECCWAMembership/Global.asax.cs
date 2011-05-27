@@ -19,7 +19,7 @@ namespace TECCWAMembership
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "MembershipForm", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "MembershipForm", action = "New", id = UrlParameter.Optional } // Parameter defaults
             );
 
         }

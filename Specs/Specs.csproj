@@ -60,6 +60,8 @@
       <DependentUpon>FillInMembershipForm.feature</DependentUpon>
     </Compile>
     <Compile Include="Helpers\WebBrowser.cs" />
+    <Compile Include="Steps\DietaryMedicalSteps.cs" />
+    <Compile Include="Steps\EmergencyContactSteps.cs" />
     <Compile Include="Steps\MembershipFormSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -49,8 +49,6 @@ namespace TECCWAMembership.Models
         [DisplayName("Wk")]
         public string WorkNumber { get; set; }
 
-        public bool IsPhoneValid { get { return HomeNumber != null || MobileNumber != null || WorkNumber != null; } }
-
         [DisplayName("Date of Birth")]
         [Required(ErrorMessage = "D.O.B. is required")]
         public string DateOfBirth { get; set; }
@@ -61,6 +59,11 @@ namespace TECCWAMembership.Models
         [Required(ErrorMessage = "E-Mail Address is required")]
         public string EmailAddress { get; set; }
 
+        public IList<EmergencyContact> EmergencyContacts { get; set; }
+
+        public bool IsPhoneValid { get { return HomeNumber != null || MobileNumber != null || WorkNumber != null; } }
+
+        public string DietaryMedicalAlerts { get; set; }
 
         public static IEnumerable<SelectListItem> StatesAsList()
         {

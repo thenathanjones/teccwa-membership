@@ -3,20 +3,66 @@
 	As a potential TECCWA member
 	I want to be able to submit a membership application
 
+Scenario: Navigating to the Home Page
+	Given I am on the home page
+	Then the title is "TECCWA Membership Form"
 
 Scenario: All the required sections are present
 	Given I am on the home page
-	Then the title is "TECCWA Membership Form"
 	And I should see "Contact Details"
 	And I should see "Dietary/Medical Alerts"
 	And I should see "Emergency Contacts"
 	And I should see "Vehicle Details"
 	And I should see "Payment Details"
 
-Scenario: The user must enter all required details
+Scenario: The user is able to fill in their contact details
+	Given I am on the home page
+	And I fill in "Title" with "Mr"
+	And I fill in "First Name" with "Roger"
+	And I fill in "Surname" with "Tomlinson"
+	And I fill in "Unit Number" with "12"
+	And I fill in "Street Number" with "146"
+	And I fill in "Street Name" with "Kippax St"
+	And I fill in "Suburb" with "Brunswick"
+	And I select "NSW" from "State"
+	And I fill in "Postcode" with "7140"
+	And I fill in "Mb" with "0418966563"
+	And I fill in "E-Mail Address" with "moo@homes.com"
+	And I fill in "Date of Birth" with "22/10/1983"
+	And I fill in "Occupation" with "Captain Awesome"
+
+Scenario: The user is able to fill in their dietary/medical requirements
+	Given I am on the home page
+	Then I fill in the Dietary Medical Requirements with "Muslim.  Halal meat only please, or fish to be safe."
+
+Scenario: The user can add and remove emergency contacts
+	Given I am on the home page
+	Then I should see 1 Emergency Contacts
+	Then I fill in "Name" for Emergency Contact 1 with "Simon O'Hughson"
+	Then I add another Emegency Contact
+	Then I should see 2 Emergency Contacts
+	Then I add another Emegency Contact
+	Then I should see 3 Emergency Contacts
+	Then I remove Emergency Contact 1
+	Then I should see 2 Emergency Contacts
+	Then "Name" for Emergency Contact 1 contains ""
+
+Scenario: The user is edit details for multiple emergency contacts
+	Given I am on the home page
+	Then I should see 1 Emergency Contacts
+	And I fill in "Name" for Emergency Contact 1 with "Simon O'Hughson"
+	And I fill in "Contact Number" for Emergency Contact 1 with "0438992223"
+	And I fill in "Relationship" for Emergency Contact 1 with "Brother"
+	And I add another Emegency Contact
+	Then I should see 2 Emergency Contacts
+	And I fill in "Name" for Emergency Contact 2 with "Roger Bobson"
+	And I fill in "Contact Number" for Emergency Contact 2 with "082345322"
+	And I fill in "Relationship" for Emergency Contact 2 with "Father"
+
+Scenario: The user must enter all required contact details
 	Given I am on the home page
 	And I press "Send"
-	Then I should be on the home page
+	Then the title is "TECCWA Membership Form"
 	Then I should see the error "Title is required"
 	And I should see the error "First Name is required"
 	And I should see the error "Surname is required"
@@ -35,4 +81,6 @@ Scenario: The user must enter a valid email address
 	Then I fill in "E-Mail Address" with "valid@email.com"
 	And I press "Send"
 	Then I should not see the error "E-Mail Address is not valid"
+
+Scenario: The user can add and remove vehicle details
 	 

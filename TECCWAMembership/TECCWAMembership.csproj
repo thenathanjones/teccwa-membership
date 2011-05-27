@@ -70,8 +70,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HtmlExtensions.cs" />
+    <Compile Include="Helpers\StringExtensions.cs" />
     <Compile Include="Helpers\ValidationHelper.cs" />
+    <Compile Include="Models\EmergencyContact.cs" />
     <Compile Include="Models\MembershipForm.cs" />
+    <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,7 +83,10 @@
     <Content Include="Content\Styles\Reset.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Styles\Site.css" />
-    <Content Include="Views\MembershipForm\Index.aspx" />
+    <Content Include="Scripts\Application.js" />
+    <Content Include="Views\Shared\EditorTemplates\EmergencyContact.ascx" />
+    <Content Include="Views\MembershipForm\New.aspx" />
+    <Content Include="Views\Shared\EditorTemplates\MembershipForm.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -55,60 +55,190 @@ namespace Specs.Features
         }
         
         [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigating to the Home Page")]
+        public virtual void NavigatingToTheHomePage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigating to the Home Page", ((string[])(null)));
+#line 6
+this.ScenarioSetup(scenarioInfo);
+#line 7
+ testRunner.Given("I am on the home page");
+#line 8
+ testRunner.Then("the title is \"TECCWA Membership Form\"");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("All the required sections are present")]
         public virtual void AllTheRequiredSectionsArePresent()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("All the required sections are present", ((string[])(null)));
-#line 7
-this.ScenarioSetup(scenarioInfo);
-#line 8
- testRunner.Given("I am on the home page");
-#line 9
- testRunner.Then("the title is \"TECCWA Membership Form\"");
 #line 10
- testRunner.And("I should see \"Contact Details\"");
+this.ScenarioSetup(scenarioInfo);
 #line 11
- testRunner.And("I should see \"Dietary/Medical Alerts\"");
+ testRunner.Given("I am on the home page");
 #line 12
- testRunner.And("I should see \"Emergency Contacts\"");
+ testRunner.And("I should see \"Contact Details\"");
 #line 13
- testRunner.And("I should see \"Vehicle Details\"");
+ testRunner.And("I should see \"Dietary/Medical Alerts\"");
 #line 14
+ testRunner.And("I should see \"Emergency Contacts\"");
+#line 15
+ testRunner.And("I should see \"Vehicle Details\"");
+#line 16
  testRunner.And("I should see \"Payment Details\"");
 #line hidden
             testRunner.CollectScenarioErrors();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("The user must enter all required details")]
-        public virtual void TheUserMustEnterAllRequiredDetails()
+        [NUnit.Framework.DescriptionAttribute("The user is able to fill in their contact details")]
+        public virtual void TheUserIsAbleToFillInTheirContactDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user must enter all required details", ((string[])(null)));
-#line 16
-this.ScenarioSetup(scenarioInfo);
-#line 17
- testRunner.Given("I am on the home page");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user is able to fill in their contact details", ((string[])(null)));
 #line 18
- testRunner.And("I press \"Send\"");
+this.ScenarioSetup(scenarioInfo);
 #line 19
- testRunner.Then("I should be on the home page");
+ testRunner.Given("I am on the home page");
 #line 20
- testRunner.Then("I should see the error \"Title is required\"");
+ testRunner.And("I fill in \"Title\" with \"Mr\"");
 #line 21
- testRunner.And("I should see the error \"First Name is required\"");
+ testRunner.And("I fill in \"First Name\" with \"Roger\"");
 #line 22
- testRunner.And("I should see the error \"Surname is required\"");
+ testRunner.And("I fill in \"Surname\" with \"Tomlinson\"");
 #line 23
- testRunner.And("I should see the error \"Street Number is required\"");
+ testRunner.And("I fill in \"Unit Number\" with \"12\"");
 #line 24
- testRunner.And("I should see the error \"Street Name is required\"");
+ testRunner.And("I fill in \"Street Number\" with \"146\"");
 #line 25
- testRunner.And("I should see the error \"Postcode is required\"");
+ testRunner.And("I fill in \"Street Name\" with \"Kippax St\"");
 #line 26
- testRunner.And("I should see the error \"Contact Phone Number is required\"");
+ testRunner.And("I fill in \"Suburb\" with \"Brunswick\"");
 #line 27
- testRunner.And("I should see the error \"E-Mail Address is required\"");
+ testRunner.And("I select \"NSW\" from \"State\"");
 #line 28
+ testRunner.And("I fill in \"Postcode\" with \"7140\"");
+#line 29
+ testRunner.And("I fill in \"Mb\" with \"0418966563\"");
+#line 30
+ testRunner.And("I fill in \"E-Mail Address\" with \"moo@homes.com\"");
+#line 31
+ testRunner.And("I fill in \"Date of Birth\" with \"22/10/1983\"");
+#line 32
+ testRunner.And("I fill in \"Occupation\" with \"Captain Awesome\"");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("The user is able to fill in their dietary/medical requirements")]
+        public virtual void TheUserIsAbleToFillInTheirDietaryMedicalRequirements()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user is able to fill in their dietary/medical requirements", ((string[])(null)));
+#line 34
+this.ScenarioSetup(scenarioInfo);
+#line 35
+ testRunner.Given("I am on the home page");
+#line 36
+ testRunner.Then("I fill in the Dietary Medical Requirements with \"Muslim.  Halal meat only please," +
+                    " or fish to be safe.\"");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("The user can add and remove emergency contacts")]
+        public virtual void TheUserCanAddAndRemoveEmergencyContacts()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user can add and remove emergency contacts", ((string[])(null)));
+#line 38
+this.ScenarioSetup(scenarioInfo);
+#line 39
+ testRunner.Given("I am on the home page");
+#line 40
+ testRunner.Then("I should see 1 Emergency Contacts");
+#line 41
+ testRunner.Then("I fill in \"Name\" for Emergency Contact 1 with \"Simon O\'Hughson\"");
+#line 42
+ testRunner.Then("I add another Emegency Contact");
+#line 43
+ testRunner.Then("I should see 2 Emergency Contacts");
+#line 44
+ testRunner.Then("I add another Emegency Contact");
+#line 45
+ testRunner.Then("I should see 3 Emergency Contacts");
+#line 46
+ testRunner.Then("I remove Emergency Contact 1");
+#line 47
+ testRunner.Then("I should see 2 Emergency Contacts");
+#line 48
+ testRunner.Then("\"Name\" for Emergency Contact 1 contains \"\"");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("The user is edit details for multiple emergency contacts")]
+        public virtual void TheUserIsEditDetailsForMultipleEmergencyContacts()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user is edit details for multiple emergency contacts", ((string[])(null)));
+#line 50
+this.ScenarioSetup(scenarioInfo);
+#line 51
+ testRunner.Given("I am on the home page");
+#line 52
+ testRunner.Then("I should see 1 Emergency Contacts");
+#line 53
+ testRunner.And("I fill in \"Name\" for Emergency Contact 1 with \"Simon O\'Hughson\"");
+#line 54
+ testRunner.And("I fill in \"Contact Number\" for Emergency Contact 1 with \"0438992223\"");
+#line 55
+ testRunner.And("I fill in \"Relationship\" for Emergency Contact 1 with \"Brother\"");
+#line 56
+ testRunner.And("I add another Emegency Contact");
+#line 57
+ testRunner.Then("I should see 2 Emergency Contacts");
+#line 58
+ testRunner.And("I fill in \"Name\" for Emergency Contact 2 with \"Roger Bobson\"");
+#line 59
+ testRunner.And("I fill in \"Contact Number\" for Emergency Contact 2 with \"082345322\"");
+#line 60
+ testRunner.And("I fill in \"Relationship\" for Emergency Contact 2 with \"Father\"");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("The user must enter all required contact details")]
+        public virtual void TheUserMustEnterAllRequiredContactDetails()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user must enter all required contact details", ((string[])(null)));
+#line 62
+this.ScenarioSetup(scenarioInfo);
+#line 63
+ testRunner.Given("I am on the home page");
+#line 64
+ testRunner.And("I press \"Send\"");
+#line 65
+ testRunner.Then("the title is \"TECCWA Membership Form\"");
+#line 66
+ testRunner.Then("I should see the error \"Title is required\"");
+#line 67
+ testRunner.And("I should see the error \"First Name is required\"");
+#line 68
+ testRunner.And("I should see the error \"Surname is required\"");
+#line 69
+ testRunner.And("I should see the error \"Street Number is required\"");
+#line 70
+ testRunner.And("I should see the error \"Street Name is required\"");
+#line 71
+ testRunner.And("I should see the error \"Postcode is required\"");
+#line 72
+ testRunner.And("I should see the error \"Contact Phone Number is required\"");
+#line 73
+ testRunner.And("I should see the error \"E-Mail Address is required\"");
+#line 74
  testRunner.And("I should see the error \"D.O.B. is required\"");
 #line hidden
             testRunner.CollectScenarioErrors();
@@ -119,22 +249,33 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void TheUserMustEnterAValidEmailAddress()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user must enter a valid email address", ((string[])(null)));
-#line 30
+#line 76
 this.ScenarioSetup(scenarioInfo);
-#line 31
+#line 77
  testRunner.Given("I am on the home page");
-#line 32
+#line 78
  testRunner.Then("I fill in \"E-Mail Address\" with \"wrongemail\"");
-#line 33
+#line 79
  testRunner.And("I press \"Send\"");
-#line 34
+#line 80
  testRunner.Then("I should see the error \"E-Mail Address is not valid\"");
-#line 35
+#line 81
  testRunner.Then("I fill in \"E-Mail Address\" with \"valid@email.com\"");
-#line 36
+#line 82
  testRunner.And("I press \"Send\"");
-#line 37
+#line 83
  testRunner.Then("I should not see the error \"E-Mail Address is not valid\"");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("The user can add and remove vehicle details")]
+        public virtual void TheUserCanAddAndRemoveVehicleDetails()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user can add and remove vehicle details", ((string[])(null)));
+#line 85
+this.ScenarioSetup(scenarioInfo);
 #line hidden
             testRunner.CollectScenarioErrors();
         }

@@ -11,6 +11,33 @@ body
     color: White;
 }
 
+h1, h2 
+{
+    font-family: 'Special Elite';
+    margin: 5px 0px;
+}
+
+h1
+{
+    font-size: 3.5em;
+}
+
+h2
+{
+    font-size: 2.5em;
+}
+
+#banner-logo
+{
+    float: left;
+}
+
+#banner-title
+{
+    float: left;
+    margin-top: 75px;
+}
+
 /* Styles for validation helpers
 -----------------------------------------------------------*/
 .field-validation-error
@@ -43,6 +70,7 @@ body
 .details-section 
 {
     background-image: url("../../Content/Images/section-background.png");
+    border: 1px solid white;
     margin: 20px;
     padding: 10px;
     clear: both;
@@ -51,13 +79,6 @@ body
 .details-section .form-fields 
 {
     clear: both;
-}
-
-.details-section h2 
-{
-    font-family: 'Special Elite';
-    font-size: 3em;
-    margin: 5px 0px;
 }
 
 .details-section label, .details-section p
