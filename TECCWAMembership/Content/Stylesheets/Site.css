@@ -175,17 +175,17 @@ label.req:after
 
 #FirstName, #LastName
 {
-    width: 260px;
+    width: 265px;
 }
 
 #StreetName
 {
-    width: 390px;
+    width: 375px;
 }
 
 #Suburb
 {
-    width: 380px;
+    width: 390px;
 }
 
 #State
@@ -195,7 +195,7 @@ label.req:after
 
 #HomeNumber, #MobileNumber, #WorkNumber
 {
-    width: 150px;
+    width: 160px;
 }
 
 #EmailAddress
