@@ -78,11 +78,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\car_add.png" />
+    <Content Include="Content\Images\car_delete.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\section-background.png" />
-    <Content Include="Content\Styles\Reset.css" />
+    <Content Include="Content\Images\submit_button_background.png" />
+    <Content Include="Content\Images\user_add.png" />
+    <Content Include="Content\Images\user_delete.png" />
+    <Content Include="Content\Stylesheets\Reset.css" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Styles\Site.css" />
+    <Content Include="Content\Stylesheets\Site.css" />
     <Content Include="Scripts\Application.js" />
     <Content Include="Views\Shared\EditorTemplates\EmergencyContact.ascx" />
     <Content Include="Views\MembershipForm\New.aspx" />

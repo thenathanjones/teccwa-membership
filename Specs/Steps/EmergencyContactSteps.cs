@@ -15,7 +15,7 @@ namespace Specs.Steps
         [Then(@"I should see (\d) Emergency Contacts")]
         public void ThenIShouldSeeEmergencyContacts(int numberOfContacts)
         {
-            Assert.AreEqual(numberOfContacts, WebBrowser.Current.Divs.Count(d => d.ClassName == "emergency-contact"));
+            Assert.AreEqual(numberOfContacts, WebBrowser.Current.Divs.Count(d => d.ClassName != null && d.ClassName.Contains("emergency-contact")));
         }
 
         [Then(@"I fill in ""(.*)"" for Emergency Contact (\d) with ""(.*)""")]
@@ -34,7 +34,7 @@ namespace Specs.Steps
         [Then(@"I remove Emergency Contact (\d)")]
         public void ThenIRemoveEmergencyContact(int contactNumber)
         {
-            WebBrowser.Current.Links.Where(l => l.ClassName == "remove-emergency-contact").ElementAt(contactNumber-1).Click();
+            WebBrowser.Current.Links.Where(l => l.ClassName != null && l.ClassName.Contains("remove-emergency-contact")).ElementAt(contactNumber-1).Click();
         }
 
         [Then(@"""(.*)"" for Emergency Contact (\d) contains ""(.*)""")]

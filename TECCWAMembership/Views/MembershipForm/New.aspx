@@ -10,6 +10,6 @@
     <% using (Html.BeginForm("Send", "MembershipForm")) {%>
         <%= Html.EditorForModel() %>
 
-            <input type="submit" value="Send" />
+            <div class="button-panel"><input id="send-application" class="rounded-corners-small" type="submit" value="Send Application..." /></div>
     <%}%>
 </asp:Content>

@@ -13,7 +13,7 @@ Scenario: All the required sections are present
 	And I should see "Dietary/Medical Alerts"
 	And I should see "Emergency Contacts"
 	And I should see "Vehicle Details"
-	And I should see "Payment Details"
+	And I should not see "Payment Details"
 
 Scenario: The user is able to fill in their contact details
 	Given I am on the home page
@@ -26,7 +26,7 @@ Scenario: The user is able to fill in their contact details
 	And I fill in "Suburb" with "Brunswick"
 	And I select "NSW" from "State"
 	And I fill in "Postcode" with "7140"
-	And I fill in "Mb" with "0418966563"
+	And I fill in "Mobile" with "0418966563"
 	And I fill in "E-Mail Address" with "moo@homes.com"
 	And I fill in "Date of Birth" with "22/10/1983"
 	And I fill in "Occupation" with "Captain Awesome"
@@ -61,7 +61,7 @@ Scenario: The user can edit details for multiple emergency contacts
 
 Scenario: The user must enter all required contact details
 	Given I am on the home page
-	And I press "Send"
+	And I press "Send Application..."
 	Then the title is "TECCWA Membership Form"
 	Then I should see the error "Title is required"
 	And I should see the error "First Name is required"
@@ -76,28 +76,28 @@ Scenario: The user must enter all required contact details
 Scenario: The user must enter a valid email address
 	Given I am on the home page
 	Then I fill in "E-Mail Address" with "wrongemail"
-	And I press "Send"
+	And I press "Send Application..."
 	Then I should see the error "E-Mail Address is not valid"
 	Then I fill in "E-Mail Address" with "valid@email.com"
-	And I press "Send"
+	And I press "Send Application..."
 	Then I should not see the error "E-Mail Address is not valid"
 
 Scenario: The user can add and remove vehicle details
 	Given I am on the home page
 	Then I should see 1 Vehicles
-	Then I fill in "Model" for Vehicle 1 with "Subaru"
+	Then I fill in "Make-Model" for Vehicle 1 with "Subaru"
 	Then I add another Vehicle
 	Then I should see 2 Vehicles
 	Then I add another Vehicle
 	Then I should see 3 Vehicles
 	Then I remove Vehicle 1
 	Then I should see 2 Vehicles
-	Then "Model" for Vehicle 1 contains ""
+	Then "Make-Model" for Vehicle 1 contains ""
 
 Scenario: The user can edit details for multiple vehicles
 	Given I am on the home page
 	Then I should see 1 Vehicles
-	And I fill in "Model" for Vehicle 1 with "Supra"
+	And I fill in "Make-Model" for Vehicle 1 with "Supra"
 	And I fill in "Year" for Vehicle 1 with "1993"
 	And I fill in "Chassis Code" for Vehicle 1 with "JZA80"
 	And I fill in "Colour" for Vehicle 1 with "Silver"
@@ -105,7 +105,7 @@ Scenario: The user can edit details for multiple vehicles
 	And I fill in "Use" for Vehicle 1 with "Daily"
 	And I add another Vehicle
 	Then I should see 2 Vehicles
-	And I fill in "Model" for Vehicle 2 with "Celica XX"
+	And I fill in "Make-Model" for Vehicle 2 with "Celica XX"
 	And I fill in "Year" for Vehicle 2 with "1981"
 	And I fill in "Chassis Code" for Vehicle 2 with "GA61"
 	And I fill in "Colour" for Vehicle 2 with "White"

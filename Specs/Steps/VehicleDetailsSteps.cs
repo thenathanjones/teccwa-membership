@@ -15,7 +15,7 @@ namespace Specs.Steps
         [Then(@"I should see (\d) Vehicles")]
         public void ThenIShouldSeeXVehicleDetails(int numDetails)
         {
-            Assert.AreEqual(numDetails, WebBrowser.Current.Divs.Count(d => d.ClassName == "vehicle"));
+            Assert.AreEqual(numDetails, WebBrowser.Current.Divs.Count(d => d.ClassName != null && d.ClassName.Contains("vehicle")));
         }
 
         [Then(@"I fill in ""(.*)"" for Vehicle (\d) with ""(.*)""")]
@@ -34,7 +34,7 @@ namespace Specs.Steps
         [Then(@"I remove Vehicle (\d)")]
         public void ThenIRemoveVehicleX(int vehicleNumber)
         {
-            WebBrowser.Current.Links.Where(l => l.ClassName == "remove-vehicle").ElementAt(vehicleNumber - 1).Click();
+            WebBrowser.Current.Links.Where(l => l.ClassName != null && l.ClassName.Contains("remove-vehicle")).ElementAt(vehicleNumber - 1).Click();
         }
 
         [Then(@"""(.*)"" for Vehicle (\d) contains ""(.*)""")]
@@ -49,7 +49,7 @@ namespace Specs.Steps
 
         private static TextField GetTargetField(string labelName, int vehicleNumber)
         {
-            var container = WebBrowser.Current.Divs.Single(d => d.Id == "vehicle-details");
+            var container = WebBrowser.Current.Divs.Single(d => d.Id == "vehicles");
             var label = container.Labels.Where(l => l.Text == labelName).ElementAt(vehicleNumber - 1);
             var forField = label.For.Contains("[0]") ? label.For.Replace("[0]", "_0_") : label.For;
             return WebBrowser.Current.TextField(t => t.Id == forField);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,7 +9,9 @@ namespace TECCWAMembership.Models
 {
     public class Vehicle
     {
-        public string Model { get; set; }
+        [Required(ErrorMessage = "Make and/or Model is required")]
+        [DisplayName("Make-Model")]
+        public string MakeModel { get; set; }
 
         public string Year { get; set; }
 

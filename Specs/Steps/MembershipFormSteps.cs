@@ -68,13 +68,13 @@ namespace Specs
         [Then(@"I should see the error ""(.*)""")]
         public void ThenIShouldSeeTheError(string errorMessage)
         {
-            Assert.True(WebBrowser.Current.Spans.Any(e => e.ClassName == "field-validation-error" && e.Text == errorMessage));
+            Assert.True(WebBrowser.Current.Spans.Any(e => e.ClassName != null && e.ClassName.Contains("field-validation-error") && e.Text == errorMessage));
         }
 
         [Then(@"I should not see the error ""(.*)""")]
         public void ThenIShouldNotSeeTheError(string errorMessage)
         {
-            Assert.False(WebBrowser.Current.Spans.Any(e => e.ClassName == "field-validation-error" && e.Text == errorMessage));
+            Assert.False(WebBrowser.Current.Spans.Any(e => e.ClassName != null && e.ClassName.Contains("field-validation-error") && e.Text == errorMessage));
         }
 
         [Given(@"I select ""(.*)"" from ""(.*)""")]

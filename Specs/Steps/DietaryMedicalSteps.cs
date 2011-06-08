@@ -14,7 +14,7 @@ namespace Specs.Steps
         [Then(@"I fill in the Dietary Medical Requirements with ""(.*)""")]
         public void ThenIFillInTheDietaryMedicalRequirementsWithBlah(string value)
         {
-            var targetField = WebBrowser.Current.TextField("dietary-medical-alerts");
+            var targetField = WebBrowser.Current.TextField("DietaryMedicalAlerts");
             targetField.Value = value;
         }
     }

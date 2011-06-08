@@ -87,7 +87,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 15
  testRunner.And("I should see \"Vehicle Details\"");
 #line 16
- testRunner.And("I should see \"Payment Details\"");
+ testRunner.And("I should not see \"Payment Details\"");
 #line hidden
             testRunner.CollectScenarioErrors();
         }
@@ -120,7 +120,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 28
  testRunner.And("I fill in \"Postcode\" with \"7140\"");
 #line 29
- testRunner.And("I fill in \"Mb\" with \"0418966563\"");
+ testRunner.And("I fill in \"Mobile\" with \"0418966563\"");
 #line 30
  testRunner.And("I fill in \"E-Mail Address\" with \"moo@homes.com\"");
 #line 31
@@ -219,7 +219,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 63
  testRunner.Given("I am on the home page");
 #line 64
- testRunner.And("I press \"Send\"");
+ testRunner.And("I press \"Send Application...\"");
 #line 65
  testRunner.Then("the title is \"TECCWA Membership Form\"");
 #line 66
@@ -256,13 +256,13 @@ this.ScenarioSetup(scenarioInfo);
 #line 78
  testRunner.Then("I fill in \"E-Mail Address\" with \"wrongemail\"");
 #line 79
- testRunner.And("I press \"Send\"");
+ testRunner.And("I press \"Send Application...\"");
 #line 80
  testRunner.Then("I should see the error \"E-Mail Address is not valid\"");
 #line 81
  testRunner.Then("I fill in \"E-Mail Address\" with \"valid@email.com\"");
 #line 82
- testRunner.And("I press \"Send\"");
+ testRunner.And("I press \"Send Application...\"");
 #line 83
  testRunner.Then("I should not see the error \"E-Mail Address is not valid\"");
 #line hidden
@@ -281,7 +281,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 87
  testRunner.Then("I should see 1 Vehicles");
 #line 88
- testRunner.Then("I fill in \"Model\" for Vehicle 1 with \"Subaru\"");
+ testRunner.Then("I fill in \"Make-Model\" for Vehicle 1 with \"Subaru\"");
 #line 89
  testRunner.Then("I add another Vehicle");
 #line 90
@@ -295,7 +295,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 94
  testRunner.Then("I should see 2 Vehicles");
 #line 95
- testRunner.Then("\"Model\" for Vehicle 1 contains \"\"");
+ testRunner.Then("\"Make-Model\" for Vehicle 1 contains \"\"");
 #line hidden
             testRunner.CollectScenarioErrors();
         }
@@ -312,7 +312,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 99
  testRunner.Then("I should see 1 Vehicles");
 #line 100
- testRunner.And("I fill in \"Model\" for Vehicle 1 with \"Supra\"");
+ testRunner.And("I fill in \"Make-Model\" for Vehicle 1 with \"Supra\"");
 #line 101
  testRunner.And("I fill in \"Year\" for Vehicle 1 with \"1993\"");
 #line 102
@@ -328,7 +328,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 107
  testRunner.Then("I should see 2 Vehicles");
 #line 108
- testRunner.And("I fill in \"Model\" for Vehicle 2 with \"Celica XX\"");
+ testRunner.And("I fill in \"Make-Model\" for Vehicle 2 with \"Celica XX\"");
 #line 109
  testRunner.And("I fill in \"Year\" for Vehicle 2 with \"1981\"");
 #line 110

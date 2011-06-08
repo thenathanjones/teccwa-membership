@@ -9,50 +9,63 @@
   <RecentFiles>
     <RecentFiles>
       <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/f:Web.config" caret="0" fromTop="0" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Styles/f:Reset.css" caret="0" fromTop="0" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/f:Global.asax.cs" caret="703" fromTop="12" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Reset.css" caret="0" fromTop="0" />
       <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/f:App.config" caret="445" fromTop="15" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Features/f:FillInMembershipForm.feature.cs" caret="2464" fromTop="17" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Styles/f:Site.css" caret="170" fromTop="7" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/f:Site.Master" caret="623" fromTop="14" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Controllers/f:MembershipFormController.cs" caret="688" fromTop="17" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Helpers/f:WebBrowser.cs" caret="596" fromTop="11" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:MembershipFormSteps.cs" caret="1618" fromTop="10" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Features/f:FillInMembershipForm.feature" caret="489" fromTop="14" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="2397" fromTop="20" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Models/f:MembershipForm.cs" caret="708" fromTop="33" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Helpers/f:WebBrowser.cs" caret="634" fromTop="24" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Helpers/f:StringExtensions.cs" caret="207" fromTop="10" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Scripts/f:jquery-1.4.1-vsdoc.js" caret="0" fromTop="0" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/f:Global.asax.cs" caret="719" fromTop="21" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Scripts/f:MicrosoftAjax.js" caret="0" fromTop="0" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:New.aspx" caret="418" fromTop="10" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Helpers/f:HtmlExtensions.cs" caret="3667" fromTop="11" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Scripts/f:Application.js" caret="354" fromTop="8" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Features/f:FillInMembershipForm.feature.cs" caret="7445" fromTop="17" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:MembershipFormSteps.cs" caret="2742" fromTop="77" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Controllers/f:MembershipFormController.cs" caret="650" fromTop="16" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Models/f:Vehicle.cs" caret="488" fromTop="21" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/f:Site.Master" caret="567" fromTop="8" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:VehicleDetailsSteps.cs" caret="1885" fromTop="49" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Features/f:FillInMembershipForm.feature" caret="538" fromTop="0" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Models/f:MembershipForm.cs" caret="1533" fromTop="14" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:EmergencyContactSteps.cs" caret="1809" fromTop="30" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:DietaryMedicalSteps.cs" caret="502" fromTop="16" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Models/f:EmergencyContact.cs" caret="366" fromTop="14" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:MembershipForm.ascx" caret="432" fromTop="4" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:EmergencyContact.ascx" caret="476" fromTop="7" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="2576" fromTop="31" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:Vehicle.ascx" caret="1359" fromTop="20" />
     </RecentFiles>
     <RecentEdits>
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/f:Site.Master" caret="758" fromTop="21" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/f:App.config" caret="445" fromTop="15" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="140" fromTop="0" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/f:Site.Master" caret="453" fromTop="1" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/f:Site.Master" caret="623" fromTop="14" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Styles/f:Site.css" caret="612" fromTop="7" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Styles/f:Site.css" caret="55" fromTop="7" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Styles/f:Site.css" caret="39" fromTop="3" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Styles/f:Site.css" caret="170" fromTop="7" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="3236" fromTop="19" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="3468" fromTop="22" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="3356" fromTop="14" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="3361" fromTop="23" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:MembershipFormSteps.cs" caret="1286" fromTop="13" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:MembershipFormSteps.cs" caret="848" fromTop="12" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="3549" fromTop="26" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Controllers/f:MembershipFormController.cs" caret="333" fromTop="14" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Controllers/f:MembershipFormController.cs" caret="688" fromTop="29" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:MembershipFormSteps.cs" caret="1776" fromTop="18" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:MembershipFormSteps.cs" caret="1476" fromTop="5" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:MembershipFormSteps.cs" caret="1618" fromTop="10" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Features/f:FillInMembershipForm.feature" caret="1031" fromTop="25" />
-      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Features/f:FillInMembershipForm.feature" caret="534" fromTop="15" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="564" fromTop="6" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="1433" fromTop="21" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="1739" fromTop="25" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="2976" fromTop="32" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="2267" fromTop="18" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:MembershipForm/f:Index.aspx" caret="2397" fromTop="20" />
-      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Models/f:MembershipForm.cs" caret="711" fromTop="33" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="404" fromTop="12" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:MembershipForm.ascx" caret="2917" fromTop="6" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="1607" fromTop="21" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="1665" fromTop="29" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:EmergencyContact.ascx" caret="647" fromTop="9" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="1659" fromTop="15" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="564" fromTop="19" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="558" fromTop="17" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="1581" fromTop="24" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="2118" fromTop="24" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:MembershipForm.ascx" caret="2110" fromTop="10" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Models/f:MembershipForm.cs" caret="1533" fromTop="14" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="1740" fromTop="0" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="2419" fromTop="22" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:MembershipForm.ascx" caret="3400" fromTop="30" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:DietaryMedicalSteps.cs" caret="482" fromTop="16" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:DietaryMedicalSteps.cs" caret="502" fromTop="16" />
+      <File id="63ACBC3B-B644-4998-873E-42ECDEE0C434/d:Steps/f:DietaryMedicalSteps.cs" caret="502" fromTop="16" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:MembershipForm.ascx" caret="1047" fromTop="4" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:MembershipForm.ascx" caret="432" fromTop="4" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="2034" fromTop="15" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="1665" fromTop="19" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="2521" fromTop="20" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:EmergencyContact.ascx" caret="476" fromTop="7" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="2465" fromTop="14" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="630" fromTop="27" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Content/d:Stylesheets/f:Site.css" caret="2576" fromTop="31" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:Vehicle.ascx" caret="1078" fromTop="16" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:Vehicle.ascx" caret="1362" fromTop="20" />
+      <File id="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF/d:Views/d:Shared/d:EditorTemplates/f:Vehicle.ascx" caret="1359" fromTop="20" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -67,47 +80,88 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="string" priority="11" />
+      <Item value="string" priority="34" />
       <Item value="_browser" priority="1" />
       <Item value="toSee" priority="1" />
       <Item value="Core" priority="1" />
-      <Item value="var" priority="5" />
-      <Item value="WebBrowser`0" priority="4" />
+      <Item value="var" priority="8" />
+      <Item value="WebBrowser`0" priority="9" />
       <Item value="e" priority="3" />
       <Item value="tf" priority="0" />
-      <Item value="l" priority="0" />
-      <Item value="label" priority="0" />
-      <Item value="targetField" priority="3" />
-      <Item value="value" priority="0" />
-      <Item value="Html" priority="0" />
+      <Item value="l" priority="1" />
+      <Item value="label" priority="3" />
+      <Item value="targetField" priority="5" />
+      <Item value="value" priority="3" />
+      <Item value="Html" priority="4" />
       <Item value="model" priority="0" />
-      <Item value="Model" priority="3" />
+      <Item value="Model" priority="4" />
       <Item value="TECCWAMembership" priority="0" />
       <Item value="Models" priority="0" />
-      <Item value="MembershipForm`0" priority="1" />
-      <Item value="ViewData" priority="2" />
+      <Item value="MembershipForm`0" priority="2" />
+      <Item value="ViewData" priority="3" />
       <Item value="as" priority="1" />
       <Item value="TextField`0" priority="0" />
       <Item value="b" priority="0" />
       <Item value="buttonText" priority="0" />
       <Item value="HttpPostAttribute`0" priority="0" />
-      <Item value="if" priority="0" />
+      <Item value="if" priority="2" />
       <Item value="ModelState" priority="0" />
-      <Item value="return" priority="1" />
+      <Item value="return" priority="3" />
       <Item value="Redirect`0" priority="0" />
       <Item value="View`0" priority="1" />
       <Item value="formToSend" priority="1" />
       <Item value="errorMessage" priority="0" />
       <Item value="ElementSelector" priority="1" />
-      <Item value="Assert`0" priority="1" />
-      <Item value="public" priority="0" />
+      <Item value="Assert`0" priority="4" />
+      <Item value="public" priority="6" />
+      <Item value="ThenAttribute`0" priority="0" />
+      <Item value="absoluteUrl" priority="0" />
+      <Item value="int" priority="7" />
+      <Item value="d" priority="1" />
+      <Item value="numberOfContacts" priority="0" />
+      <Item value="Then`0" priority="0" />
+      <Item value="IList" priority="1" />
+      <Item value="EmergencyContact`0" priority="3" />
+      <Item value="new" priority="17" />
+      <Item value="List&lt;EmergencyContact&gt;" priority="1" />
+      <Item value="EmergencyContact" priority="2" />
+      <Item value="for" priority="0" />
+      <Item value="ControllerActionInvoker`0" priority="0" />
+      <Item value="contact" priority="2" />
+      <Item value="RenderPartialExtensions`0" priority="0" />
+      <Item value="HttpGetAttribute`0" priority="0" />
+      <Item value="form" priority="3" />
+      <Item value="IDictionary" priority="1" />
+      <Item value="LinkToAddNestedForm`1" priority="0" />
+      <Item value="htmlHelper" priority="1" />
+      <Item value="linkText" priority="1" />
+      <Item value="containerElement" priority="0" />
+      <Item value="counterElement" priority="0" />
+      <Item value="collectionProperty" priority="0" />
+      <Item value="nestedType" priority="0" />
+      <Item value="TagBuilder`0" priority="0" />
+      <Item value="tb" priority="0" />
+      <Item value="htmlAttributes" priority="1" />
+      <Item value="object" priority="2" />
+      <Item value="null" priority="0" />
+      <Item value="contactNumber" priority="1" />
+      <Item value="LinkToRemoveNestedForm`0" priority="0" />
+      <Item value="deleteElement" priority="0" />
+      <Item value="Dictionary&lt;string,object&gt;" priority="4" />
+      <Item value="RemovedControl`0" priority="0" />
+      <Item value="t" priority="0" />
+      <Item value="labels" priority="0" />
+      <Item value="Display" priority="0" />
+      <Item value="Vehicle`0" priority="0" />
+      <Item value="List&lt;Vehicle&gt;" priority="0" />
+      <Item value="Vehicle" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WatiN.Core.IE">
       <Item value="GoTo`0" priority="0" />
       <Item value="ContainsText`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Specs.Helpers.WebBrowser">
-      <Item value="Current" priority="6" />
+      <Item value="Current" priority="11" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WatiN.Core.Browser">
       <Item value="GoTo`0" priority="0" />
@@ -117,11 +171,18 @@
       <Item value="Elements" priority="1" />
       <Item value="Labels" priority="0" />
       <Item value="Button`0" priority="0" />
+      <Item value="SelectList`0" priority="0" />
+      <Item value="Page`1" priority="0" />
+      <Item value="Url" priority="1" />
+      <Item value="Spans" priority="0" />
+      <Item value="Divs" priority="1" />
+      <Item value="Links" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
       <Item value="True`0" priority="2" />
-      <Item value="AreEqual`0" priority="0" />
+      <Item value="AreEqual`0" priority="4" />
       <Item value="Fail`0" priority="0" />
+      <Item value="IsNull`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WatiN.Core.LabelCollection">
       <Item value="Single`1" priority="0" />
@@ -129,6 +190,7 @@
     <ItemStatistics item="Qualified:WatiN.Core.Label">
       <Item value="Text" priority="0" />
       <Item value="GetAttributeValue`0" priority="0" />
+      <Item value="For" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WatiN.Core.Element">
       <Item value="Id" priority="2" />
@@ -137,18 +199,22 @@
       <Item value="Text" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WatiN.Core.TextField">
-      <Item value="Value" priority="0" />
+      <Item value="Value" priority="3" />
       <Item value="TypeText`0" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Id" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
       <Item value="BeginForm`0" priority="0" />
       <Item value="LabelFor`2" priority="0" />
-      <Item value="TextBoxFor`2" priority="0" />
+      <Item value="TextBoxFor`2" priority="1" />
       <Item value="ValidationMessageFor`2" priority="0" />
       <Item value="DropDownListFor`2" priority="0" />
+      <Item value="EditorFor`2" priority="0" />
+      <Item value="LinkToRemoveNestedForm`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.ViewDataDictionary">
-      <Item value="Model" priority="2" />
+      <Item value="Model" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WatiN.Core.Button">
       <Item value="Text" priority="0" />
@@ -165,6 +231,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="ToArray`1" priority="0" />
+      <Item value="ElementAt`1" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:TECCWAMembership.Models.MembershipForm">
       <Item value="FirstName" priority="1" />
@@ -172,6 +239,46 @@
       <Item value="StreetName" priority="1" />
       <Item value="UnitNumber" priority="0" />
       <Item value="StreetNumber" priority="0" />
+      <Item value="EmergencyContacts" priority="3" />
+      <Item value="VehicleDetails" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WatiN.Core.SelectList">
+      <Item value="SelectByValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WatiN.Core.DivCollection">
+      <Item value="Count" priority="0" />
+      <Item value="Single`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TECCWAMembership.Models.EmergencyContact">
+      <Item value="ContactNumber" priority="0" />
+      <Item value="Relationship" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.Html.RenderPartialExtensions">
+      <Item value="RenderPartial`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WatiN.Core.LinkCollection">
+      <Item value="First`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WatiN.Core.Link">
+      <Item value="ClassName" priority="1" />
+      <Item value="Id" priority="0" />
+      <Item value="Click`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.TagBuilder">
+      <Item value="MergeAttributes`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WatiN.Core.Div">
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Replace`0" priority="1" />
+      <Item value="Contains`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

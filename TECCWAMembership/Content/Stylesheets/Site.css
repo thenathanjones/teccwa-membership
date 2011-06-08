@@ -1,0 +1,304 @@
+
+html 
+{
+    background-color: Black; 
+}
+
+body 
+{
+    font-size: 12px;
+    font-family: "Lucida Grande", Geneva, Arial, Helvetica, sans-serif;
+    color: White;
+}
+
+#main 
+{
+    margin: auto;
+    width: 1000px;
+    padding: 20px;
+}
+
+h1, h2 
+{
+    font-family: 'Allerta Stencil';
+    margin: 5px 0px;
+}
+
+h1
+{
+    font-size: 3.5em;
+}
+
+h2
+{
+    font-size: 2.5em;
+}
+
+label, .label-like
+{
+    font-size: 1.5em;  
+    text-align: left; 
+}
+
+input 
+{
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+select 
+{
+    padding: 5px;
+    font-size: 1.25em;
+}
+
+a 
+{
+    color: Red;
+    font-weight:bold;
+    margin: 10px;
+    padding: 3px;
+    font-size: 1.3em;   
+}
+
+a:visited 
+{   
+    color: Red;
+}
+
+#banner-logo
+{
+    float: left;
+}
+
+#banner-title
+{
+    float: left;
+    margin-top: 75px;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #E8E8E8;
+    float: left;
+    clear: both;
+    font-size: 1.1em;
+    margin: 2px 0px 2px 10px;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+.details-section 
+{
+    background-image: url("../../Content/Images/section-background.png");
+    border: 1px solid white;
+    margin: 20px;
+    padding: 10px;
+    clear: both;
+}
+
+.new-line 
+{
+    clear: left;
+}
+
+.details-section label, .details-section p
+{
+    float: left;
+    text-align: right;
+    padding: 3px 5px;
+    margin: 8px;    
+}
+
+.details-section .little-label
+{
+    width: 45px;
+}
+
+.details-section input, .details-section select
+{
+    float: left;
+}
+
+.rounded-corners 
+{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.rounded-corners-small
+{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+
+label.req:after 
+{
+    content: "*"; 
+}
+
+.clear 
+{
+    clear: both;
+}
+
+#UnitNumber, #StreetNumber, #Title
+{
+    width: 45px;
+}
+
+#FirstName, #LastName
+{
+    width: 288px;
+}
+
+#StreetName
+{
+    width: 410px;
+}
+
+#Suburb
+{
+    width: 400px;
+}
+
+#State
+{
+    padding: 5px 17px;
+}
+
+#HomeNumber, #MobileNumber, #WorkNumber
+{
+    width: 175px;
+}
+
+#EmailAddress
+{
+    width: 775px;
+}
+
+#Occupation
+{
+    width: 508px;
+}
+
+#DietaryMedicalAlerts
+{
+    width: 922px;
+    margin: auto;
+}
+
+.EmergencyContactName
+{
+    width: 175px;
+}
+
+.EmergencyContactNumber
+{
+    width: 150px;
+}
+
+.EmergencyRelationship
+{
+    width: 100px;
+}
+
+.VehicleYear
+{
+    width: 100px;
+}
+
+.VehicleModel
+{
+    width: 195px;
+}
+
+.VehicleUse
+{
+    width: 350px;
+}
+
+.button-panel 
+{
+    text-align: right;
+    margin: 5px 0px;
+}
+
+#send-application
+{
+    width: 250px;
+    font-family: 'Allerta Stencil';
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+    border: 1px solid Gray;
+    color: White;
+    background-image: url("../../Content/Images/submit_button_background.png");
+    cursor: pointer;
+}
+
+#send-application:hover
+{
+    opacity: 0.85;
+}
+
+a.icon-link 
+{
+    background: no-repeat left 50%;
+    border: 1px solid Gray;
+    padding: 3px 3px 3px 23px;
+    margin: 5px;
+    background-color: #303030;
+}
+
+a.remove-emergency-contact, a.remove-vehicle
+{
+    float: left;
+    margin-left: 15px;
+}
+
+a#add-emergency-contact 
+{
+    background-image: url("../../Content/Images/user_add.png");
+}
+
+a#add-vehicle 
+{
+    background-image: url("../../Content/Images/car_add.png");
+}
+
+a.remove-emergency-contact 
+{
+    background-image: url("../../Content/Images/user_delete.png");
+}
+
+a.remove-vehicle 
+{
+    background-image: url("../../Content/Images/car_delete.png");
+}

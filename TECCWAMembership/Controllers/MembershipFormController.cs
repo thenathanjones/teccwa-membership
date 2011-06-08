@@ -10,14 +10,15 @@ namespace TECCWAMembership.Controllers
 {
     public class MembershipFormController : Controller
     {
-        //
-        // GET: /MembershipForm/
+
         [HttpGet]
         public ActionResult New()
         {
-            var form = new MembershipForm();
-            form.EmergencyContacts = new List<EmergencyContact>() {new EmergencyContact()};
-            form.VehicleDetails = new List<Vehicle>() {new Vehicle()};
+            var form = new MembershipForm
+                           {
+                               EmergencyContacts = new List<EmergencyContact>() {new EmergencyContact()},
+                               Vehicles = new List<Vehicle>() {new Vehicle()}
+                           };
 
             return View(form);
         }

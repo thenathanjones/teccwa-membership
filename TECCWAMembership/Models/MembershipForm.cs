@@ -40,13 +40,13 @@ namespace TECCWAMembership.Models
         [Required(ErrorMessage = "Postcode is required")]
         public string Postcode { get; set; }
 
-        [DisplayName("Hm")]
+        [DisplayName("Home")]
         public string HomeNumber { get; set; }
 
-        [DisplayName("Mb")]
+        [DisplayName("Mobile")]
         public string MobileNumber { get; set; }
 
-        [DisplayName("Wk")]
+        [DisplayName("Work")]
         public string WorkNumber { get; set; }
 
         [DisplayName("Date of Birth")]
@@ -61,11 +61,11 @@ namespace TECCWAMembership.Models
 
         public IList<EmergencyContact> EmergencyContacts { get; set; }
 
-        public IList<Vehicle> VehicleDetails { get; set; }
-
-        public bool IsPhoneValid { get { return HomeNumber != null || MobileNumber != null || WorkNumber != null; } }
+        public IList<Vehicle> Vehicles { get; set; }
 
         public string DietaryMedicalAlerts { get; set; }
+
+        public bool IsPhoneValid { get { return HomeNumber != null || MobileNumber != null || WorkNumber != null; } }
 
         public static IEnumerable<SelectListItem> StatesAsList()
         {

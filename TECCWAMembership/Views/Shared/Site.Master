@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
-    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
-    <link href="../../Content/Styles/Reset.css" rel="stylesheet" type="text/css" />
-    <link href="../../Content/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Allerta+Stencil' rel='stylesheet' type='text/css'>
+    <link href="../../Content/Stylesheets/Reset.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/Stylesheets/Site.css" rel="stylesheet" type="text/css" />
     <script src="<%= Url.Content("~/Scripts/Application.js") %>" type="text/javascript"></script>
     <script src="<%= Url.Content("~/Scripts/jquery-1.4.1.js") %>" type="text/javascript"></script>
 </head>
