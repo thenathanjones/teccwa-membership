@@ -175,17 +175,17 @@ label.req:after
 
 #FirstName, #LastName
 {
-    width: 288px;
+    width: 260px;
 }
 
 #StreetName
 {
-    width: 410px;
+    width: 390px;
 }
 
 #Suburb
 {
-    width: 400px;
+    width: 380px;
 }
 
 #State
@@ -195,17 +195,17 @@ label.req:after
 
 #HomeNumber, #MobileNumber, #WorkNumber
 {
-    width: 175px;
+    width: 150px;
 }
 
 #EmailAddress
 {
-    width: 775px;
+    width: 750px;
 }
 
 #Occupation
 {
-    width: 508px;
+    width: 490px;
 }
 
 #DietaryMedicalAlerts
@@ -221,7 +221,7 @@ label.req:after
 
 .EmergencyContactNumber
 {
-    width: 150px;
+    width: 125px;
 }
 
 .EmergencyRelationship
@@ -231,12 +231,17 @@ label.req:after
 
 .VehicleYear
 {
-    width: 100px;
+    width: 90px;
 }
 
 .VehicleModel
 {
     width: 195px;
+}
+
+.VehicleCode
+{
+    width: 90px;
 }
 
 .VehicleUse
