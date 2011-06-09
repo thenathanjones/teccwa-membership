@@ -5,16 +5,18 @@
     <div class="emergency-contact-name field">
         <%= Html.LabelFor(model => model.Name)%>
         <%= Html.TextBoxFor(model => model.Name)%>
-        <%= Html.ValidationMessageFor(model => model.Name)%>  
     </div>
     <div class="emergency-contact-number field">
         <%= Html.LabelFor(model => model.ContactNumber)%>
         <%= Html.TextBoxFor(model => model.ContactNumber)%>
-        <%= Html.ValidationMessageFor(model => model.ContactNumber)%>  
     </div>
     <div class="emergency-contact-relationship field">
         <%= Html.LabelFor(model => model.Relationship)%>
         <%= Html.TextBoxFor(model => model.Relationship)%>                 
+    </div>
+    <div class="errors">
+        <%= Html.ValidationMessageFor(model => model.Name)%>  
+        <%= Html.ValidationMessageFor(model => model.ContactNumber)%>  
         <%= Html.ValidationMessageFor(model => model.Relationship)%>  
     </div>
 

@@ -1,6 +1,0 @@
-<Modules>
-  <Module PersistentId="63ACBC3B-B644-4998-873E-42ECDEE0C434" ModuleId="Specs" />
-  <Module PersistentId="AE35E6FD-F3D0-4510-9BB1-61BBC6F1ECDF" ModuleId="TECCWAMembership" />
-  <Module PersistentId="521E320B-E577-4001-86E5-E5BDEF4E219A" ModuleId="MvcApplication1" />
-  <Module PersistentId="EA058D48-00A1-4952-88EC-5D976B926257" ModuleId="MvcApplication1_1" />
-</Modules>
