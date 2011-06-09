@@ -31,13 +31,12 @@
         <%= Html.LabelFor(model => model.Use)%>
         <%= Html.TextBoxFor(model => model.Use)%>
     </div>
+    <%= Html.LinkToRemoveNestedForm("Remove", "div.vehicle", new { @class = "remove-vehicle icon-link rounded-corners-small" })%> 
     <div class="errors">
         <%= Html.ValidationMessageFor(model => model.Colour)%>      
         <%= Html.ValidationMessageFor(model => model.Engine)%> 
         <%= Html.ValidationMessageFor(model => model.Use)%> 
     </div>
-        
-    <%= Html.LinkToRemoveNestedForm("Remove", "div.vehicle", new { @class = "remove-vehicle icon-link rounded-corners-small" })%> 
     <div class="clear"></div>
 </div>
 

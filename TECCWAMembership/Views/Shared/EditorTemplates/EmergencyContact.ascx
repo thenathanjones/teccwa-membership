@@ -14,12 +14,11 @@
         <%= Html.LabelFor(model => model.Relationship)%>
         <%= Html.TextBoxFor(model => model.Relationship)%>                 
     </div>
+    <%= Html.LinkToRemoveNestedForm("Remove", "div.emergency-contact", new { @class = "remove-emergency-contact icon-link rounded-corners-small" })%>
     <div class="errors">
         <%= Html.ValidationMessageFor(model => model.Name)%>  
         <%= Html.ValidationMessageFor(model => model.ContactNumber)%>  
         <%= Html.ValidationMessageFor(model => model.Relationship)%>  
     </div>
-
-    <%= Html.LinkToRemoveNestedForm("Remove", "div.emergency-contact", new { @class = "remove-emergency-contact icon-link rounded-corners-small" })%>
     <div class="clear"></div>
 </div>
