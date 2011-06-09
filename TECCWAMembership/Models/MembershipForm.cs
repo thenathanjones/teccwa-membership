@@ -20,10 +20,10 @@ namespace TECCWAMembership.Models
         [Required(ErrorMessage = "Surname is required")]
         public string LastName { get; set; }
 
-        [DisplayName("Unit Number")]
+        [DisplayName("Unit #")]
         public string UnitNumber { get; set; }
 
-        [DisplayName("Street Number")]
+        [DisplayName("Street #")]
         [Required(ErrorMessage = "Street Number is required")]
         public string StreetNumber { get; set; }
 

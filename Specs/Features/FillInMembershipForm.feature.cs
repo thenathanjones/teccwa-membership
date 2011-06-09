@@ -108,9 +108,9 @@ this.ScenarioSetup(scenarioInfo);
 #line 22
  testRunner.And("I fill in \"Surname\" with \"Tomlinson\"");
 #line 23
- testRunner.And("I fill in \"Unit Number\" with \"12\"");
+ testRunner.And("I fill in \"Unit #\" with \"12\"");
 #line 24
- testRunner.And("I fill in \"Street Number\" with \"146\"");
+ testRunner.And("I fill in \"Street #\" with \"146\"");
 #line 25
  testRunner.And("I fill in \"Street Name\" with \"Kippax St\"");
 #line 26
