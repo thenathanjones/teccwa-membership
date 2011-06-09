@@ -341,6 +341,36 @@ div.emergency-contact-relationship input
     width: 140px;
 }
 
+div.vehicle-year input
+{
+    width: 140px;
+}
+
+div.vehicle-make-model input
+{
+    width: 340px;
+}
+
+div.vehicle-chassis-code input
+{
+    width: 225px;
+}
+
+div.vehicle-colour input
+{
+    width: 140px;
+}
+
+div.vehicle-engine input
+{
+    width: 140px;
+}
+
+div.vehicle-use input
+{
+    width: 425px;
+}
+
 .vehicle, .emergency-contact
 {
     border: 1px dashed gray;
