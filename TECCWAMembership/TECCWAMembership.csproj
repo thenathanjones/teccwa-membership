@@ -80,6 +80,7 @@
   <ItemGroup>
     <Content Include="Content\Images\car_add.png" />
     <Content Include="Content\Images\car_delete.png" />
+    <Content Include="Content\Images\input_background.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\section-background.png" />
     <Content Include="Content\Images\submit_button_background.png" />

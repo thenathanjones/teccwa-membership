@@ -14,7 +14,7 @@ body
 #main 
 {
     margin: auto;
-    width: 1000px;
+    width: 960px;
     padding: 20px;
 }
 
@@ -42,8 +42,9 @@ label, .label-like
 
 input 
 {
-    padding: 5px;
-    font-size: 1.2em;
+    padding: 4px;
+    font-size: 1.7em;
+    background-image: url("../../Content/Images/input_background.png");
 }
 
 select 
@@ -75,6 +76,12 @@ a:visited
 {
     float: left;
     margin-top: 75px;
+}
+
+.clear 
+{
+    float: none;
+    clear: both;
 }
 
 /* Styles for validation helpers
@@ -124,22 +131,27 @@ a:visited
     clear: left;
 }
 
-.details-section label, .details-section p
+.details-section label, .details-section input, .details-section select
 {
-    float: left;
-    text-align: right;
-    padding: 3px 5px;
-    margin: 8px;    
+   float: left;
+   clear: left;
 }
 
-.details-section .little-label
+.details-section div
 {
-    width: 45px;
+    margin: 2px;
+    padding: 2px;
 }
 
-.details-section input, .details-section select
+.details-section div.field
 {
     float: left;
+    margin-bottom: 5px;
+}
+
+.details-section div input, .details-section div label
+{
+    
 }
 
 .rounded-corners 
@@ -158,95 +170,9 @@ a:visited
     border-radius: 3px;
 }
 
-label.req:after 
+label.required:after 
 {
     content: "*"; 
-}
-
-.clear 
-{
-    clear: both;
-}
-
-#UnitNumber, #StreetNumber, #Title
-{
-    width: 45px;
-}
-
-#FirstName, #LastName
-{
-    width: 265px;
-}
-
-#StreetName
-{
-    width: 375px;
-}
-
-#Suburb
-{
-    width: 390px;
-}
-
-#State
-{
-    padding: 5px 17px;
-}
-
-#HomeNumber, #MobileNumber, #WorkNumber
-{
-    width: 160px;
-}
-
-#EmailAddress
-{
-    width: 750px;
-}
-
-#Occupation
-{
-    width: 490px;
-}
-
-#DietaryMedicalAlerts
-{
-    width: 922px;
-    margin: auto;
-}
-
-.EmergencyContactName
-{
-    width: 175px;
-}
-
-.EmergencyContactNumber
-{
-    width: 125px;
-}
-
-.EmergencyRelationship
-{
-    width: 100px;
-}
-
-.VehicleYear
-{
-    width: 90px;
-}
-
-.VehicleModel
-{
-    width: 195px;
-}
-
-.VehicleCode
-{
-    width: 90px;
-}
-
-.VehicleUse
-{
-    width: 350px;
 }
 
 .button-panel 
@@ -268,7 +194,7 @@ label.req:after
     cursor: pointer;
 }
 
-#send-application:hover
+input[type='submit']:hover
 {
     opacity: 0.85;
 }
@@ -276,10 +202,8 @@ label.req:after
 a.icon-link 
 {
     background: no-repeat left 50%;
-    border: 1px solid Gray;
     padding: 3px 3px 3px 23px;
     margin: 5px;
-    background-color: #303030;
 }
 
 a.remove-emergency-contact, a.remove-vehicle
@@ -301,9 +225,115 @@ a#add-vehicle
 a.remove-emergency-contact 
 {
     background-image: url("../../Content/Images/user_delete.png");
+    margin-top: 25px;
 }
 
 a.remove-vehicle 
 {
     background-image: url("../../Content/Images/car_delete.png");
 }
+
+div.title input
+{
+    width: 50px;
+}
+
+div.first-name input
+{
+    width: 390px;
+}
+
+div.last-name input
+{
+    width: 390px;
+}
+
+div.unit-number input
+{
+    width: 95px;
+}
+
+div.street-number input
+{
+    width: 95px;
+}
+
+div.street-name input
+{
+    width: 625px;
+}
+
+div.contact-number 
+{
+    width: 148px;
+    min-height: 40px;
+}
+
+div.contact-number span
+{
+    display: block;
+    margin-top: 20px;
+}
+
+div.home-number label, div.mobile-number label, div.work-number label
+{
+    font-size: 1.3em;
+}
+
+div.home-number input, div.mobile-number input, div.work-number input
+{
+    width: 225px;
+}
+
+div.suburb input
+{
+    width: 660px;
+}
+
+div.postcode input
+{
+    width: 107px;
+}
+
+div.state select
+{
+    margin-top: 2px;
+    width: 72px;
+    height: 36px;
+}
+
+div.email input
+{
+    width: 415px;
+}
+
+div.date-of-birth input
+{
+    width: 110px;
+}
+
+div.occupation input
+{
+    width: 305px;
+}
+
+#DietaryMedicalAlerts 
+{
+    width: 875px;
+}
+
+div.emergency-contact-name input
+{
+    width: 340px;
+}
+
+div.emergency-contact-number input
+{
+    width: 225px;
+}
+
+div.emergency-contact-relationship input
+{
+    width: 140px;
+}
+
